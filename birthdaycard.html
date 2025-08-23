@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Halaman Pembuka dengan Amplop -->
+    <div class="envelope-container" id="envelopePage">
+        <div class="invitation-text">
+            <h1>SPECIAL INVITATION</h1>
+            <p>A celebration for someone special</p>
+        </div>
+        
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-content">
+                    <h2>You're Invited! - Giffari</h2>
+                    <p>To a birthday celebration</p>
+                    <p>Click to open</p>
+                </div>
+                <div class="envelope-seal">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="open-text" id="openText">
+            <i class="fas fa-hand-point-up"></i> CLICK TO OPEN
+        </div>
+    </div>
+
+    <!-- Halaman Utama (Awalnya Disembunyikan) -->
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Selamat Ulang Tahun!</h1>
+                <p>Untuk bear brand ku yang tersayang</p>
+            </div>
+            
+            <div class="image-upload">
+                <div class="characters">
+                    <div class="character">
+                        <div class="hearts" id="hearts1"></div>
+                        <img src="nailong1.jpg" alt="Nailong" class="character-img">
+                    </div>
+                    <div class="character">
+                        <div class="hearts" id="hearts2"></div>
+                        <img src="nailong3.jpeg" alt="Bear" class="character-img">
+                    </div>
+                </div>
+            </div>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-top"></div>
+                    <div class="frosting"></div>
+                    <div class="decoration"></div>
+                    <div class="cake-bottom"></div>
+                    
+                    <div class="candles">
+                        <div class="candle" id="candle1">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" id="candle2">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" id="candle3">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn" id="onBtn"><i class="fas fa-fire"></i> Nyalakan Lilin</button>
+                <button class="btn" id="offBtn"><i class="fas fa-ban"></i> Matikan Lilin</button>
+            </div>
+            
+            <div class="video-container" id="videoContainer">
+                <div class="video-wrapper">
+                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/VEkGI11OQKE?autoplay=1&mute=1&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="message" id="birthdayMessage">
+                <h2>Happy Birthday Sayang!</h2>
+    
+                <p>
+                    Selamat ulang tahun mybearbrand 🐻!!
+                    Semoga ke depannya semua impian dan harapanmu bisa tercapai satu per satu.
+                    Makasih ya udah selalu ngajakin aku ke tempat-tempat seru, enak, dan juga tempat favoritmu 🤗.
+                    Semoga kamu selalu sehat, panjang umur, dimudahkan segala urusan, dan yang paling penting: bahagia selalu.
+                    Mungkin kita belum saling kenal terlalu jauh, tapi aku ngerasa sejauh ini kamu udah ngelakuin yang terbaik, dan aku yakin ke depannya kamu bisa jadi lebih hebat lagi.
+                    And then, ayoo kita jalan-jalan lagiii 🥳❤
+                    </p>
+                    
+            </div>
+        </div>
+
+        <div class="music-control">
+            <button class="music-btn" id="musicToggle">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+
+        <div class="song-info">
+            Sekarang diputar: "About You" by The 1975
+        </div>
+
+        <!-- Menggunakan link lagu About You oleh The 1975 dari SoundCloud -->
+        <audio id="backgroundMusic" loop>
+            <source src="1975_about_you.mp3">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
